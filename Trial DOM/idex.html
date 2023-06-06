@@ -5,12 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trial Website For DOM</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
+    <!-- NOTE: CSS file should be linked on top as the graphics should be loaded first 
+     (as browser goes top -bottom) second The JS file should be linked at last because 
+    it is the best practice  -->
+
+
 </head>
 <!-- This method to incorporate in-line JS should be 
     avoided as it is difficult to debug and its not very modular  -->
-<body onload="alert('Hello');"> 
+<!-- <body onload="alert('Hello');">  -->
+
+    <body>
     <h1>Hello</h1>
     
+    <!-- Just like CSS, JS can be implemented in 3 types 
+    1) In-line (should be avoided)
+    2) Creating <Script> in body at very bottom
+    3) Externally using link tag. -->
+    
+    
+    <!-- Internal way of embedding JS -->
+    <!-- <script>
+            alert("Hello");
+         </script> -->
+
+        
+         <script src="index.js"></script>
+
+         
+
+
+
+
 </body>
 </html>
